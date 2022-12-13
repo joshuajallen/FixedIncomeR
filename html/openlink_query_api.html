@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Access to the RM View over the Openlink API</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for openlink_query_api {FIRVrBOE}"><tr><td>openlink_query_api {FIRVrBOE}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Access to the RM View over the Openlink API</h2>
+
+<h3>Description</h3>
+
+<p>Access to the RM View over the Openlink API
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+openlink_query_api(
+  instrument_types = NULL,
+  portfolios = NULL,
+  tran_statuses = NULL,
+  deal_number_min = NULL,
+  deal_number_max = NULL,
+  trade_date_min = NULL,
+  trade_date_max = NULL
+)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>instrument_types</code></td>
+<td>
+<p>A vector of instrument types e.g. &quot;GBND&quot;, &quot;MM-G-Bill&quot;</p>
+</td></tr>
+<tr valign="top"><td><code>portfolios</code></td>
+<td>
+<p>A vector of portfolio names e.g. &quot;CBA - CAN$ Bond Trading&quot;</p>
+</td></tr>
+<tr valign="top"><td><code>tran_statuses</code></td>
+<td>
+<p>A vector of transaction statuses e.g. &quot;Validated&quot;</p>
+</td></tr>
+<tr valign="top"><td><code>deal_number_min</code></td>
+<td>
+<p>Minimum deal number</p>
+</td></tr>
+<tr valign="top"><td><code>deal_number_max</code></td>
+<td>
+<p>Maximum deal number</p>
+</td></tr>
+<tr valign="top"><td><code>trade_date_min</code></td>
+<td>
+<p>Minimum trade date</p>
+</td></tr>
+<tr valign="top"><td><code>trade_date_max</code></td>
+<td>
+<p>Maximum trade date</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>A data_frame of trades or a zero row data_frame if an error occurred
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+openlink_query_api(portfolios = "CBA - CAN$ Bond Trading",
+                             instrument_types = c("GBND"),
+                             tran_statuses = "Validated")
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>FIRVrBOE</em> version 0.0.0.9000 <a href="00Index.html">Index</a>]</div>
+</body></html>

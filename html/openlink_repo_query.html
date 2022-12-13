@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Get a list of bond, bill, ECP and bond future positions for...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for openlink_repo_query {FIRVrBOE}"><tr><td>openlink_repo_query {FIRVrBOE}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Get a list of bond, bill, ECP and bond future positions for the EEA</h2>
+
+<h3>Description</h3>
+
+<p>Get a list of bond, bill, ECP and bond future positions for the EEA
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+openlink_repo_query(
+  portfolios = openlink_portfolio_mappings()$Portfolio,
+  ins_types = c("GBND", "MM-G-Bill", "MM-ECP", "BONDFUT"),
+  tran_statuses = "Validated"
+)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>portfolios</code></td>
+<td>
+<p>A vector of portfolio names e.g. &quot;CBA - CAN$ Bond Trading&quot;</p>
+</td></tr>
+<tr valign="top"><td><code>ins_types</code></td>
+<td>
+<p>A vector of instrument types e.g. &quot;GBND&quot;</p>
+</td></tr>
+<tr valign="top"><td><code>tran_statuses</code></td>
+<td>
+<p>A vector of transaction statuses e.g. &quot;Validated&quot;</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>A data frame
+</p>
+
+<hr /><div style="text-align: center;">[Package <em>FIRVrBOE</em> version 0.0.0.9000 <a href="00Index.html">Index</a>]</div>
+</body></html>

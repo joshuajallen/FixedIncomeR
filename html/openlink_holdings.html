@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Get Openlink holdings by currency and portfolio class</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for openlink_holdings {FIRVrBOE}"><tr><td>openlink_holdings {FIRVrBOE}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Get Openlink holdings by currency and portfolio class</h2>
+
+<h3>Description</h3>
+
+<p>Get Openlink holdings by currency and portfolio class
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+openlink_holdings(
+  business = "EEA",
+  currency = c("AUD", "CAD", "EUR", "JPY", "USD"),
+  target_date = Sys.Date()
+)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>business</code></td>
+<td>
+<p>Business area e.g. &quot;EEA&quot;</p>
+</td></tr>
+<tr valign="top"><td><code>currency</code></td>
+<td>
+<p>Holding currency e.g. &quot;USD&quot;</p>
+</td></tr>
+<tr valign="top"><td><code>target_date</code></td>
+<td>
+<p>Date for which the holding is valid</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>A data frame of holdings, settled as of a given date
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+openlink_holdings()
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>FIRVrBOE</em> version 0.0.0.9000 <a href="00Index.html">Index</a>]</div>
+</body></html>

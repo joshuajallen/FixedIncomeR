@@ -1,0 +1,19 @@
+
+RWINLIB = ../../quantlib-1.16
+#RWINLIB = /c/GitRepos/quantlib-1.16
+
+PKG_CPPFLAGS = -I$(RWINLIB)/include
+
+PKG_CXXFLAGS = \
+	$(SHLIB_OPENMP_CXXFLAGS) \
+	-DBOOST_NO_AUTO_PTR \
+	-Wno-deprecated-declarations
+
+# Note: Use -L$(RWINLIB)/lib-4.9.3$(R_ARCH)/lib for older (3.5) toolset
+PKG_LIBS = \
+	-L$(RWINLIB)/lib$(R_ARCH)/lib \
+	-lQuantLib \
+	$(SHLIB_OPENMP_CXXFLAGS)
+
+# Use C++11 for long long in Boost headers
+CXX_STD = CXX11
