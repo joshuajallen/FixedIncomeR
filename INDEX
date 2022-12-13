@@ -1,0 +1,12 @@
+openlink_deal_info      Get deal information for a vector of deal
+                        numbers
+openlink_holdings       Get Openlink holdings by currency and portfolio
+                        class
+openlink_portfolio_mappings
+                        Get Openlink portfolio mappings
+openlink_query_api      Access to the RM View over the Openlink API
+openlink_query_vector_to_api_string
+                        Convert a vector to the format required for
+                        Openlink API parameters
+openlink_repo_query     Get a list of bond, bill, ECP and bond future
+                        positions for the EEA
